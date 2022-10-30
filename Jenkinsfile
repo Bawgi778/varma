@@ -6,7 +6,7 @@ pipeline{
                 branch "devlop"
             }
             steps{
-                git url "https://github.com/Bawgi778/varma"
+                git url : "https://github.com/Bawgi778/varma"
             }
         }
         stage("stage2"){
