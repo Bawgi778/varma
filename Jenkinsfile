@@ -6,7 +6,7 @@ pipeline{
                 branch "devlop"
             }
             steps{
-                echo "hello world"
+                git url "https://github.com/Bawgi778/varma"
             }
         }
         stage("stage2"){
@@ -14,7 +14,7 @@ pipeline{
                 branch "staging"
             }
             steps{
-                echo "hello bro"
+                sh "mvn clean package"
             }
         }
         stage("stage3"){
